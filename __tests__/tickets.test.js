@@ -20,6 +20,7 @@ describe("Tickets", () => {
     })
 
     describe("calculateTotalFromTicketNames()", () => {
+        
         it("should return correct total price of tickets", () => {
             const actual = calculateTotalFromTicketNames(ticketData, ticketNames)
             const expected = 6114;

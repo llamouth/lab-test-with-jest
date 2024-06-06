@@ -18,9 +18,8 @@ function calculateTotalFromIDs(concessions, ids) {
   let total = 0;
   for (let id of ids) {
     const concession = getConcessionByID(concessions, id);
-    if (concession) {
-      total += concession.priceInCents;
-    }
+    concession && (total += concession.priceInCents);
+    
   }
   return total;
 }
